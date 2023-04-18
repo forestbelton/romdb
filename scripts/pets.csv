@@ -1,0 +1,64 @@
+name,type,skill1,skill2,skill3,skill4,skill5,hatch_exp,hatch_stat,hatch_stat_amount
+Poring,WATER,Ball Attack,Environmental Protection,Hit Rate Up,Upright Cutie,Labor: Cooking I,50,MAGIC_DEFENSE,1
+Yoyo,EARTH,Throw Rocks,Playful,Attack Speed Up,Bullet Time,Labor: Kafra Co. I,50,MAGIC_DEFENSE,1
+Mandragora Seed,UNKNOWN,Magic Sound Style,Curious...,Crit Rate up,Magic Elf,Labor: Cuisine Association I,150,MAX_HP,20
+Desert Wolf Baby,UNKNOWN,Tearing Hard,Hardworking,Evil Attack,Great Appetite,Labor: Pet Association I,100,DEFENSE,1
+Isis,UNKNOWN,Mental Charm,Housekeeping,Singing Attainment,Angel's Love,Labor: Smile Assistance I,200,MAGIC_ATTACK,2
+Savage Babe,EARTH,Advance Attack,Homesick,Refine Atk,Hard Skin,Labor: Arena Fighting I,50,MAGIC_DEFENSE,1
+Sohee,UNKNOWN,Cold Bolt,Pure,M.Atk Up,Ice Ode,Labor: Guild II,300,MAGIC_ATTACK,2
+Deviruchi,UNKNOWN,Dark Invasion,Smart,Atk Up,Resplendent Dance,Labor: Pet Association II,200,ATTACK,2
+Green Petite,UNKNOWN,Spikeweed,Treasure Hunt,Healing Effect Up,Super Vigor,Labor: Cooking II,150,MAX_HP,20
+Baphomet Jr.,UNKNOWN,Sonic Blow,Thrift,Crit.Dmg Up,Gale Style,Labor: Kafra Co. II,300,ATTACK,2
+Lunatic,NEUTRAL,Soul Strike,Luk,Refine M.Atk,Moon's Charm,Labor: Item shop I,1,DEFENSE,1
+Little Witch,UNKNOWN,Magic Fire,Curious...,Fire Burn,Fiery Explosion,Labor: Kafra Co. II,300,ATTACK,2
+Cruiser,UNKNOWN,Shoot,Homesick,Atk Up,Dex,Labor: Cooking II,150,MAGIC_ATTACK,2
+Teddy Bear,UNKNOWN,Butt,Luk,Crit Rate Up,Life Essence,Labor: Pet Association II,200,MAX_HP,20
+Spore,WATER,Water Dmg,Flexibility,Plant Fibre,Playful,Labor: Cuisine Association I,50,DEFENSE,1
+Rocker,UNKNOWN,Earth Dmg,Flee Up,Insect Dance,Luk,Labor: Cooking I,50,DEFENSE,1
+Poison Spore,POISON,Poison Element Damage,Flexibility,Poisonous Body,Environmental Protection,Labor: Pet Association I,50,DEFENSE,1
+Whisper,UNKNOWN,Soul Strike,Buffing Power,Shrouded Form,Smart,Labor: Smile Assistance I,100,DEFENSE,1
+Peco Peco,UNKNOWN,Sharp Stab,Sharp,Main Guard,Luk,Labor: Pet Association I,50,DEFENSE,1
+Munak,UNKNOWN,Undead Element Damage,Corpse Poison,Painless,Environmental Protection,Labor: Item shop II,50,DEFENSE,1
+Golem,UNKNOWN,Knocking Attack,Stone Skin,Stone Res,Playful,Labor: Smile Assistance I,50,MAX_HP,20
+Goblin (Buckler),UNKNOWN,Knock! Knock! Knock,War Horn,Stir Trouble,Luk,Labor: Item shop I,100,MAX_HP,20
+Orc Warrior,UNKNOWN,Come at me,Attack Speed Up,Wrap Wound,Hardworking,Labor: Arena Fighting I,150,MAX_HP,20
+Dokebi,UNKNOWN,I'm rich!,Sloth,Snare Res,Diligence,Labor: Pet Association I,50,MAGIC_ATTACK,2
+Incubus,UNKONWN,Devil Soul,Heart of Sin,Devil's Strength,Master Treasure Hunter,Labor: Smile Assistance I,200,ATTACK,2
+Succubus,UNKNOWN,Bloody Kiss,Kiss of Sin,Devil's Strength,Pure,Labor: Kafra Co. II,200,ATTACK,2
+Marmot,UNKNOWN,Frenzied Scratch,Attack Speed Up,Speed Up,Homesick,Labor: Cuisine Association I,200,DEFENSE,1
+Obeaune,WATER,Blessings,Ocean Magic,Holy Water Blessing,Luk,Labor: Smile Assistance I,50,MAX_HP,20
+Bongun,UNKNOWN,Spiraling Pierce,Hit Rate Up,Lost Heart,Curious...,Labor: Pet Association II,150,MAX_HP,20
+Christmas Goblin,UNKNOWN,Pierce,Flee Up,Atk Up,Greed,Labor: Pet Association I,200,MAX_HP,20
+Marionette Doll,UNKNOWN,Napalm Vulcan,Captivating Chanting,Chant Return,Homesick,Labor: Cooking I,150,MAX_HP,20
+Smokie,UNKNOWN,Deceptive Strike,Atk Up,Disguise,Smart,Labor: Cuisine Association I,150,MAGIC_ATTACK,2
+Harpy,UNKNOWN,Flying Wing Attack,M.Atk Up,Feather Blade,Greed,Labor: Kafra Co. I,200,ATTACK,2
+Zherlthsh,UNKNOWN,Come and Play,Castigate,Atk Up,Vice,Labor: Kafra Co. II,300,MAGIC_ATTACK,2
+Miyabi Ningyo,UNKNOWN,Full Recovery,Shelter,Hymn,Curious...,Labor: Smile Assistance I,300,MAGIC_ATTACK,2
+Fairy,UNKNOWN,Mental Burn,Freezing Flame,Dark Flame,Wits,Labor: Item shop I,300,ATTACK,2
+Alice,UNKNOWN,Sweep Clean,Liquidation,Crit Rate Up,Wits,Labor: Cooking II,300,ATTACK,2
+Quve,UNKNOWN,Soul Strike,Ghost Steps,Undead Form,Luk,Labor: Cooking II,100,ATTACK,2
+Dullahan,UNKNOWN,Void Defense Attack,Dead Nemesis,Terrifying Armor,Housekeeping,Labor: Guild II,200,MAX_HP,20
+Marina,UNKNOWN,Water Dmg,Curious...,Water Affinity,Soft,Labor: Cuisine Association I,50,DEFENSE,1
+Typhoon,UNKNOWN,Whirlwind,Treasure Hunt,Wind Affinity,Formless,Labor: Cooking II,100,MAX_HP,20
+Mechanical Hound,UNKNOWN,Infrared Ray,Luk,Overcharge,Magic Surge,Labor: Item shop II,100,MAGIC_ATTACK,2
+Orc Lady,UNKNOWN,Kiss of Death,Housekeeping,Tough Skin,Unbreakable Will,Labor: Arena Fighting I,100,ATTACK,2
+Minorous,UNKNOWN,Earth Splitter,Hardworking,Beast Heart,Titanic Power,Labor: Guild II,100,MAX_HP,40
+Sky Petite,UNKNOWN,Dragon Breath,Diligence,Dragonheart,Dragon Blood,Labor: Item shop I,100,DEFENSE,1
+Highland Parasite,UNKNOWN,Rose Thorn Lash,Pure,Magic Resist,Torture,Labor: Kafra Co. II,100,MAGIC_DEFENSE,1
+Martin Scavenger,UNKNOWN,Mecha Claw,Master Treasure Hunter,Recycle,Scientific Power,Labor: Pet Association II,150,MAX_HP,80
+Orc Baby,UNKNOWN,Wild Roar,Smart,Orcish Lineage,Purity,Labor: Guild II,250,MAGIC_ATTACK,4
+Moonlight Flower,UNKNOWN,Death Whirl,Vice,Feral Nature,Sharp Claws,Labor: Kafra Co. II,300,ATTACK,4
+Mini Gryphon,UNKNOWN,Consecration,Pure,Sacred Mourning,Holy Spirit,Labor: Guild II,1,,
+Lightning Gentleman,UNKNOWN,Shattered Earth,Master Treasure Hunter,Beast God's power,Solid as rocks,Labor: Cooking II,1,DEFENSE,4
+Giant-eared Frando,UNKNOWN,Cunning Strike,Playful,Deserter,Toxic Affinity,Labor: Pet Association I,1,MAX_HP,30
+Naughty Mame Shiba,UNKNOWN,Victory Strike,Housekeeping,Cute Pet,Exquisite,Labor: Cooking II,1,MAX_HP,60
+Skewer,UNKNOWN,Licking,Curious...,Spiritual power,Brisk,Labor: Cooking II,1,DEFENSE,1
+Ferocious Ghost,UNKNOWN,Threaten,Treasure Hunt,Enlarge,Trick,Labor: Kafra Co. II,1,MAGIC_ATTACK,3
+Yolk Poring,EARTH,Yolk Attack,Luk,Hit Rate Up,Upright Cutie,Labor: Smile Assistance I,1,DEFENSE,1
+Injustice,UNKNOWN,Evil Strike,Vice,Wicked Heart,Steadfast,Labor: Cooking II,1,MAX_HP,20
+Roween,UNKNOWN,Claw Strike,Smart,Flee Up,Armor Breaking Claw,Labor: Pet Association II,1,DEFENSE,1
+Small Siroma,UNKNOWN,Water Dmg,Pure,Thick Fur,Frozen Force,Labor: Item shop I,1,MAGIC_DEFENSE,1
+Panda Poring,UNKNOWN,Ball Attack,Smart,National Treasure,Cute,Labor: Kafra Co. II,1,MAX_HP,80
+Lantern Fisherman,UNKNOWN,Water Dmg,Thrift,Fish Scale Renovatio,Hydrotherapy,Labor: Cooking II,1,MAX_HP,20
+Doll Devil,UNKNOWN,Wind Dmg,Pure,Childlike Innocence,Earth affinity,Labor: Kafra Co. II,1,MAX_HP,80
+Mimmy Monster,UNKNOWN,Earth Dmg,Playful,Long Hair,Atk Up,Labor: Cooking I,1,MAGIC_ATTACK,2

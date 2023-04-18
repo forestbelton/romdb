@@ -1,0 +1,6 @@
+name,type,range,time,cooldown,description
+Ball Attack,ACTIVE,1.0,0.5,5.0,Deals 200% Dmg to the melee target
+Environmental Protection,PASSIVE,,,,Increases normal materials gained in adventure by 2
+Hit Rate Up,PASSIVE,,,,Increases 1 Hit for the pet and its master
+Upright Cutie,PASSIVE,,,,Increases 20 Max HP for the pet and its master
+Labor: Cooking I,PASSIVE,,,,Increases working efficiency by 0.5% at the Cooking Center
