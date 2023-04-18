@@ -1,24 +1,24 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter'
+import m from "mithril";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+import "./style.css";
+import { Element, Pet, PetView, Stat } from "./pet";
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+const pet: Pet = {
+  name: "Poring",
+  element: Element.WATER,
+  skills: [],
+  catchInfo: {
+    itemName: "Green Apple",
+    quantity: 3,
+    unitPriceShells: 10,
+  },
+  hatchInfo: {
+    adventureExp: 50,
+    bonusStats: [{ name: Stat.MAGIC_DEFENSE, value: 1 }],
+  },
+};
+
+const root = document.getElementById("app");
+if (root !== null) {
+  m.render(root, m(PetView, { pet }, []));
+}
