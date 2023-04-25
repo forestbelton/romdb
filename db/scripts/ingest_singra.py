@@ -2,13 +2,8 @@ import csv
 import sqlite3
 from typing import TypedDict
 
-db = sqlite3.connect("romdb.sqlite3")
-db.row_factory = sqlite3.Row
-
-
-class Entity(TypedDict):
-    id: int
-    created_at: str
+import common
+from common import db, Entity
 
 
 class Story(TypedDict):
@@ -30,31 +25,27 @@ class StoryQuestEntity(Entity):
 def read_stories() -> list[Story]:
     stories_by_name: dict[str, Story] = {}
     quests_by_story_name: dict[str, list[tuple[int, str]]] = {}
-    with open("csv/singra_story_quests.csv", "r") as f:
-        r = csv.DictReader(f)
-        for row in r:
-            story_name = row["story_name"]
-            if story_name not in stories_by_name:
-                stories_by_name[story_name] = {
-                    "map_name": row["map_name"],
-                    "quests": [],
-                    "reward_item_name": "",
-                    "story_name": story_name,
-                }
-            if story_name not in quests_by_story_name:
-                quests_by_story_name[story_name] = []
-            quests_by_story_name[story_name].append(
-                (int(row["quest_number"]), row["quest_name"])
-            )
+    for row in common.read_csv("csv/singra_story_quests.csv"):
+        story_name = row["story_name"]
+        if story_name not in stories_by_name:
+            stories_by_name[story_name] = {
+                "map_name": row["map_name"],
+                "quests": [],
+                "reward_item_name": "",
+                "story_name": story_name,
+            }
+        if story_name not in quests_by_story_name:
+            quests_by_story_name[story_name] = []
+        quests_by_story_name[story_name].append(
+            (int(row["quest_number"]), row["quest_name"])
+        )
     for story_name, quests in quests_by_story_name.items():
         stories_by_name[story_name]["quests"] = [
             quest[1] for quest in sorted(quests, key=lambda quest: quest[0])
         ]
-    with open("csv/singra_story_rewards.csv", "r") as f:
-        r = csv.DictReader(f)
-        for row in r:
-            story = stories_by_name[row["story_name"]]
-            story["reward_item_name"] = row["item_name"]
+    for row in common.read_csv("csv/singra_story_rewards.csv"):
+        story = stories_by_name[row["story_name"]]
+        story["reward_item_name"] = row["item_name"]
     return list(stories_by_name.values())
 
 

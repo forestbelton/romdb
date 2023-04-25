@@ -1,20 +1,18 @@
 import csv
 import sqlite3
 
-db = sqlite3.connect("romdb.sqlite3")
+import common
+from common import db
 
 
 def get_skill_id_by_name(name: str) -> int:
     cursor = db.cursor()
+    cursor.execute(
+        "INSERT OR IGNORE INTO pet_skills (name, type, description) VALUES (?, '', '')",
+        (name,),
+    )
     cursor.execute("SELECT id FROM pet_skills WHERE name = ?", (name,))
     row = cursor.fetchone()
-    if row is None:
-        cursor.execute(
-            "INSERT INTO pet_skills (name, type, description) VALUES (?, '', '')",
-            (name,),
-        )
-        cursor.execute("SELECT id FROM pet_skills WHERE name = ?", (name,))
-        row = cursor.fetchone()
     cursor.close()
     db.commit()
     return row[0]
@@ -34,70 +32,64 @@ def get_skill_id_by_name(name: str) -> int:
 #     Known affected pets: Mini Gryphon
 def ingest_pets_csv() -> None:
     cursor = db.cursor()
-    with open("csv/pets.csv", "r") as f:
-        r = csv.DictReader(f)
-        for row in r:
-            for field in ["skill1", "skill2", "skill3", "skill4", "skill5"]:
-                row[field] = get_skill_id_by_name(row[field])
-            cursor.execute(
-                "INSERT INTO pets (name, type, skill1, skill2, skill3, skill4, skill5, hatch_exp) VALUES (:name, :type, :skill1, :skill2, :skill3, :skill4, :skill5, :hatch_exp)",
-                row,
-            )
-            db.commit()
+    for row in common.read_csv("csv/pets.csv"):
+        for field in ["skill1", "skill2", "skill3", "skill4", "skill5"]:
+            row[field] = get_skill_id_by_name(row[field])
+        cursor.execute(
+            "INSERT OR IGNORE INTO pets (name, type, skill1, skill2, skill3, skill4, skill5, hatch_exp) VALUES (:name, :type, :skill1, :skill2, :skill3, :skill4, :skill5, :hatch_exp)",
+            row,
+        )
+        db.commit()
     cursor.close()
 
 
 def ingest_pet_skills_csv() -> None:
     cursor = db.cursor()
-    with open("csv/pet_skills.csv", "r") as f:
-        r = csv.DictReader(f)
-        for row in r:
-            get_skill_id_by_name(row["name"])
-            assert row["type"] in {"ACTIVE", "PASSIVE"}
-            if row["type"] == "ACTIVE":
-                for field in {"range", "time", "cooldown"}:
-                    if field not in row:
-                        continue
-                    row[field] = float(row[field])
-                if "time" not in row:
-                    row["time"] = 0.0
-            elif row["type"] == "PASSIVE":
-                assert row["range"] == ""
-                row["range"] = None
-                assert row["time"] == ""
-                row["time"] = None
-                assert row["cooldown"] == ""
-                row["cooldown"] = None
-            cursor.execute(
-                "UPDATE pet_skills SET type = :type, range = :range, time = :time, cooldown = :cooldown, description = :description WHERE name = :name",
-                row,
-            )
-            db.commit()
+    for row in common.read_csv("csv/pet_skills.csv"):
+        get_skill_id_by_name(row["name"])
+        assert row["type"] in {"ACTIVE", "PASSIVE"}
+        if row["type"] == "ACTIVE":
+            for field in {"range", "time", "cooldown"}:
+                if field not in row:
+                    continue
+                row[field] = float(row[field])
+            if "time" not in row:
+                row["time"] = 0.0
+        elif row["type"] == "PASSIVE":
+            assert row["range"] == ""
+            row["range"] = None
+            assert row["time"] == ""
+            row["time"] = None
+            assert row["cooldown"] == ""
+            row["cooldown"] = None
+        cursor.execute(
+            "UPDATE pet_skills SET type = :type, range = :range, time = :time, cooldown = :cooldown, description = :description WHERE name = :name",
+            row,
+        )
+        db.commit()
     cursor.close()
 
 
 def ingest_pet_catch_items_csv() -> None:
     cursor = db.cursor()
-    with open("csv/pet_tame_items.csv", "r") as f:
-        r = csv.DictReader(f)
-        for row in r:
-            cursor.execute(
-                """
-                INSERT INTO pet_catch_items (
-                    pet_id,
-                    item_name,
-                    unit_price_shells,
-                    quantity
-                ) VALUES (
-                    (SELECT id FROM pets WHERE name = :name),
-                    :item_name,
-                    :unit_price_shells,
-                    :quantity
-                )
-                """,
-                row,
+    for row in common.read_csv("csv/pet_tame_items.csv"):
+        cursor.execute(
+            """
+            INSERT OR IGNORE INTO pet_catch_items (
+                pet_id,
+                item_name,
+                unit_price_shells,
+                quantity
+            ) VALUES (
+                (SELECT id FROM pets WHERE name = :name),
+                :item_name,
+                :unit_price_shells,
+                :quantity
             )
-            db.commit()
+            """,
+            row,
+        )
+        db.commit()
     cursor.close()
 
 
