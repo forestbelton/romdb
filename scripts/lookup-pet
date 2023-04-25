@@ -1,7 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-
-PET=$(echo "$1" | tr '[a-z]' '[A-Z]')
-
-sqlite3 -header pets.sqlite3 \
-    "select * from pets join pet_catch_items on pets.id = pet_catch_items.pet_id where upper(pets.name) like '%$PET%';"
