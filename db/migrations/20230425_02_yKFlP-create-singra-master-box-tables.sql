@@ -1,5 +1,5 @@
--- 
--- depends: 20230425_01_gDK3c-create-tables-for-pet-data
+-- Create Singra Master Box tables
+-- depends: 20230425_01_gDK3c-create-pet-tables
 CREATE TABLE singra_stories(
     id INTEGER PRIMARY KEY,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
