@@ -10,7 +10,7 @@ CREATE TABLE singra_stories(
 
 CREATE TABLE singra_story_quests(
     id INTEGER PRIMARY KEY,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMETSTAMP,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     story_id INTEGER NOT NULL REFERENCES singra_stories(id),
     quest_number INTEGER NOT NULL,
     quest_name TEXT NOT NULL,
