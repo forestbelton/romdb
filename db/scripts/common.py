@@ -1,24 +1,11 @@
 import csv
 import dataclasses
 import sqlite3
-from typing import Generator, Optional, TypedDict
+from typing import Generator, Optional
 
 # TODO: Compute path from script directory
 db = sqlite3.connect("romdb.sqlite3")
 db.row_factory = sqlite3.Row
-
-
-class Entity(TypedDict):
-    id: int
-
-
-@dataclasses.dataclass
-class Upsert:
-    fetch_existing_sql: str
-    insert_new_sql: str
-
-    def execute(self, data: dict) -> Optional[sqlite3.Row]:
-        upsert(self.fetch_existing_sql, self.insert_new_sql, data)
 
 
 def read_csv(filename: str) -> Generator[dict, None, None]:
@@ -37,31 +24,31 @@ def execute_one(query: str, data: dict) -> Optional[sqlite3.Row]:
         cursor.close()
 
 
-def execute_for_csv(filename: str, query: str) -> list[Optional[sqlite3.Row]]:
-    return [execute_one(query, row) for row in read_csv(filename)]
+def execute_many(query: str, data: dict) -> list[sqlite3.Row]:
+    cursor = db.cursor()
+    try:
+        cursor.execute(query, data)
+        return cursor.fetchall()
+    finally:
+        cursor.close()
+
+
+def execute_for_csv(
+    filename: str, query: str, many: bool = False
+) -> list[Optional[sqlite3.Row]]:
+    if not many:
+        return [execute_one(query, row) for row in read_csv(filename)]
+    results = []
+    for row in read_csv(filename):
+        results.extend(execute_many(query, row))
+    return results
 
 
 @dataclasses.dataclass
 class UpsertFile:
     csv_path: str
     upsert_sql: str
+    many: bool = False
 
     def execute(self) -> list[sqlite3.Row]:
-        return execute_for_csv(self.csv_path, self.upsert_sql)
-
-
-def upsert(
-    fetch_existing_query: str, insert_new_query: str, data: dict
-) -> Optional[sqlite3.Row]:
-    cursor = db.cursor()
-    existing = None
-    try:
-        cursor.execute(fetch_existing_query, data)
-        existing = cursor.fetchone()
-        if existing is None:
-            cursor.execute(insert_new_query, data)
-            existing = cursor.fetchone()
-            db.commit()
-    finally:
-        cursor.close()
-    return existing
+        return execute_for_csv(self.csv_path, self.upsert_sql, self.many)

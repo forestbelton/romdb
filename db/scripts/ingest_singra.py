@@ -4,7 +4,7 @@ import common
 SINGRA_STORIES = common.UpsertFile(
     csv_path="csv/singra_story_quests.csv",
     upsert_sql="""
-        INSERT OR IGNORE INTO singra_stories (
+        INSERT OR REPLACE INTO singra_stories (
             map_name,
             story_name
         ) VALUES (
@@ -17,7 +17,7 @@ SINGRA_STORIES = common.UpsertFile(
 SINGRA_STORY_QUESTS = common.UpsertFile(
     csv_path="csv/singra_story_quests.csv",
     upsert_sql="""
-        INSERT OR IGNORE INTO singra_story_quests (
+        INSERT OR REPLACE INTO singra_story_quests (
             story_id,
             quest_number,
             quest_name

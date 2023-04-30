@@ -3,7 +3,7 @@ import common
 RECIPES = common.UpsertFile(
     csv_path="csv/cooking_recipes.csv",
     upsert_sql="""
-        INSERT OR IGNORE INTO cooking_recipes (
+        INSERT OR REPLACE INTO cooking_recipes (
             name,
             num_stars
         ) VALUES (
@@ -16,7 +16,7 @@ RECIPES = common.UpsertFile(
 RECIPE_INGREDIENTS = common.UpsertFile(
     csv_path="csv/cooking_recipe_ingredients.csv",
     upsert_sql="""
-        INSERT OR IGNORE INTO cooking_recipe_ingredients (
+        INSERT OR REPLACE INTO cooking_recipe_ingredients (
             recipe_id,
             ingredient_name
         ) VALUES (
