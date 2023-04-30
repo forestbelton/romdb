@@ -1,4 +1,5 @@
 import csv
+import dataclasses
 import sqlite3
 from typing import Generator, Optional, TypedDict
 
@@ -9,7 +10,15 @@ db.row_factory = sqlite3.Row
 
 class Entity(TypedDict):
     id: int
-    created_at: str
+
+
+@dataclasses.dataclass
+class Upsert:
+    fetch_existing_sql: str
+    insert_new_sql: str
+
+    def execute(self, data: dict) -> Optional[sqlite3.Row]:
+        upsert(self.fetch_existing_sql, self.insert_new_sql, data)
 
 
 def read_csv(filename: str) -> Generator[dict, None, None]:
@@ -17,6 +26,28 @@ def read_csv(filename: str) -> Generator[dict, None, None]:
         r = csv.DictReader(f)
         for row in r:
             yield row
+
+
+def execute_one(query: str, data: dict) -> Optional[sqlite3.Row]:
+    cursor = db.cursor()
+    try:
+        cursor.execute(query, data)
+        return cursor.fetchone()
+    finally:
+        cursor.close()
+
+
+def execute_for_csv(filename: str, query: str) -> list[Optional[sqlite3.Row]]:
+    return [execute_one(query, row) for row in read_csv(filename)]
+
+
+@dataclasses.dataclass
+class UpsertFile:
+    csv_path: str
+    upsert_sql: str
+
+    def execute(self) -> list[sqlite3.Row]:
+        return execute_for_csv(self.csv_path, self.upsert_sql)
 
 
 def upsert(

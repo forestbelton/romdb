@@ -1,8 +1,7 @@
 -- Create tables for pet data
--- depends: 
+-- depends:
 CREATE TABLE IF NOT EXISTS pet_skills(
     id INTEGER PRIMARY KEY,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     name TEXT NOT NULL UNIQUE,
     type TEXT NOT NULL,
     range REAL,
@@ -13,7 +12,6 @@ CREATE TABLE IF NOT EXISTS pet_skills(
 
 CREATE TABLE IF NOT EXISTS pets(
     id INTEGER PRIMARY KEY,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     name TEXT NOT NULL UNIQUE,
     type TEXT NOT NULL,
     skill1 INTEGER NOT NULL REFERENCES pet_skills(id),
@@ -26,7 +24,6 @@ CREATE TABLE IF NOT EXISTS pets(
 
 CREATE TABLE IF NOT EXISTS pet_catch_items(
     id INTEGER PRIMARY KEY,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     pet_id INTEGER UNIQUE NOT NULL REFERENCES pets(id),
     item_name TEXT NOT NULL,
     unit_price_shells INTEGER,
@@ -35,7 +32,6 @@ CREATE TABLE IF NOT EXISTS pet_catch_items(
 
 CREATE TABLE IF NOT EXISTS pet_hatch_stats(
     id INTEGER PRIMARY KEY,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     pet_id INTEGER NOT NULL REFERENCES pets(id),
     stat TEXT NOT NULL,
     amount INTEGER NOT NULL
