@@ -29,7 +29,7 @@ with open("pet_tame_items.csv", "r") as f:
                     :quantity
                 );
                 """,
-                row
+                row,
             )
         except sqlite3.IntegrityError as exc:
             print(exc)
