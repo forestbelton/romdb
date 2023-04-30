@@ -14,3 +14,4 @@ fi
 yoyo apply --batch
 python scripts/ingest_pets.py
 python scripts/ingest_singra.py
+python scripts/ingest_cooking.py
