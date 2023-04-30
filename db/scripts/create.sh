@@ -3,8 +3,10 @@ set -euo pipefail
 
 VIRTUAL_ENV=${VIRTUAL_ENV:-}
 SCRIPTDIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-ENVDIR="${SCRIPTDIR}/../.env"
+DBDIR="${SCRIPTDIR}/.."
+ENVDIR="${DBDIR}/.env"
 
+cd "$DBDIR"
 if [[ "$VIRTUAL_ENV" = "" ]]; then
     if [[ ! -d "$ENVDIR" ]]; then
         python -m venv "$ENVDIR"
