@@ -4,7 +4,7 @@ CREATE TABLE singra_stories(
     id INTEGER PRIMARY KEY,
     map_name TEXT NOT NULL,
     story_name TEXT NOT NULL,
-    reward_item_name TEXT NOT NULL
+    UNIQUE (map_name, story_name)
 );
 
 CREATE TABLE singra_story_quests(
@@ -14,4 +14,11 @@ CREATE TABLE singra_story_quests(
     quest_name TEXT NOT NULL,
     UNIQUE (story_id, quest_number),
     CHECK (quest_number > 0)
+);
+
+CREATE TABLE singra_story_rewards(
+    id INTEGER PRIMARY KEY,
+    story_id INTEGER NOT NULL REFERENCES singra_stories(id),
+    item_name TEXT NOT NULL,
+    UNIQUE (story_id, item_name)
 );
