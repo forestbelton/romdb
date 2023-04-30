@@ -2,7 +2,7 @@ import initSqlJs, { Database } from "sql.js";
 import { CookingRecipe } from "./model";
 
 const SQLJS_WASM_BASEURL = "https://sql.js.org/dist";
-const ROMDB_SQLITE_PATH = "/romdb.sqlite3";
+const ROMDB_SQLITE_PATH = "/romdb/romdb.sqlite3";
 
 const GET_ALL_INGREDIENTS_QUERY = `
 SELECT DISTINCT ingredient_name
