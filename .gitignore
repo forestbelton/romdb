@@ -26,4 +26,3 @@ dist-ssr
 # ROM-specific files
 global-metadata.dat
 libil2cpp.so
-*.sqlite3
