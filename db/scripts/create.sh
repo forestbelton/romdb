@@ -2,12 +2,14 @@
 set -euo pipefail
 
 VIRTUAL_ENV=${VIRTUAL_ENV:-}
+SCRIPTDIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ENVDIR="${SCRIPTDIR}/../.env"
 
 if [[ "$VIRTUAL_ENV" = "" ]]; then
-    if [[ ! -d "$(pwd)/.env" ]]; then
-        python -m venv $(pwd)/.env
+    if [[ ! -d "$ENVDIR" ]]; then
+        python -m venv "$ENVDIR"
     fi
-    source $(pwd)/.env/bin/activate
+    source "$ENVDIR/bin/activate"
     pip install --quiet --requirement requirements.txt
 fi
 
