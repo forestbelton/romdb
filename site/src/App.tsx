@@ -1,35 +1,23 @@
-import { useEffect, useState } from "react";
-import CookingTournament from "./solvers/cooking-tournament/CookingTournament";
-import RomDatabase from "./RomDatabase";
+import { Route, Router, Switch } from "wouter";
 
-type AppState = {
-  database: RomDatabase;
-  ingredients: string[];
-};
+import NavigationBar from "./component/NavigationBar";
+import CookingTournamentPage from "./page/CookingTournamentPage";
 
-function App() {
-  const [state, setState] = useState<AppState | null>(null);
-  useEffect(() => {
-    if (state !== null) {
-      return;
-    }
-    (async () => {
-      const database = await RomDatabase.create();
-      const ingredients = await database.getRecipeIngredients();
-      setState({
-        database,
-        ingredients,
-      });
-    })();
-  }, []);
-  return state === null ? (
-    <span>Loading...</span>
-  ) : (
-    <CookingTournament
-      ingredients={state.ingredients}
-      database={state.database}
-    />
-  );
-}
+const DEFAULT_PAGE = CookingTournamentPage;
+
+const App = () => (
+  <Router base="/romdb">
+    <NavigationBar />
+    <div style={{ padding: "1rem" }}>
+      <Switch>
+        <Route
+          path="/tools/cooking-tournament"
+          component={CookingTournamentPage}
+        />
+        <Route component={DEFAULT_PAGE} />
+      </Switch>
+    </div>
+  </Router>
+);
 
 export default App;

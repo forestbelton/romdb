@@ -1,0 +1,28 @@
+.Dropdown {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.Dropdown-Title::after {
+  content: "\2b9f";
+  margin-left: 1rem;
+}
+
+.Dropdown:hover > .Dropdown-Title::after {
+  content: "\2b9d";
+}
+
+.Dropdown-Content {
+  background-color: #242424;
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  display: none;
+  padding: 0.5rem 0.5rem 0.5rem;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.Dropdown:hover > .Dropdown-Content {
+  display: flex;
+  flex-direction: column;
+}
