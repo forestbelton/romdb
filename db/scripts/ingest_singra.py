@@ -29,7 +29,7 @@ SINGRA_STORY_QUESTS = common.UpsertFile(
                 AND story_name = TRIM(:story_name)
             ),
             :quest_number,
-            :quest_name
+            TRIM(:quest_name)
         );
     """,
 )
@@ -46,7 +46,7 @@ SINGRA_STORY_REWARDS = common.UpsertFile(
                 FROM singra_stories
                 WHERE story_name = TRIM(:story_name)
             ),
-            :item_name
+            TRIM(:item_name)
         );
     """,
 )

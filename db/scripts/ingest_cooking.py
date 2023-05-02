@@ -11,12 +11,12 @@ RECIPES = common.UpsertFile(
             taste_mastery_effect,
             taste_mastery_value
         ) VALUES (
-            :recipe_name,
+            TRIM(:recipe_name),
             :num_stars,
-            :cook_mastery_effect,
-            :cook_mastery_value,
-            :taste_mastery_effect,
-            :taste_mastery_value
+            TRIM(:cook_mastery_effect),
+            TRIM(:cook_mastery_value),
+            TRIM(:taste_mastery_effect),
+            TRIM(:taste_mastery_value)
         );
     """,
 )
@@ -31,9 +31,9 @@ RECIPE_INGREDIENTS = common.UpsertFile(
             (
                 SELECT id
                 FROM cooking_recipes
-                WHERE name = :recipe_name
+                WHERE name = TRIM(:recipe_name)
             ),
-            :ingredient_name
+            TRIM(:ingredient_name)
         );
     """,
 )

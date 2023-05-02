@@ -29,55 +29,22 @@ PET_SKILLS = common.UpsertFile(
             :range,
             :time,
             :cooldown,
-            :description
+            TRIM(:description)
         );
     """,
 )
 
-PET_SKILLS_MISSING1 = common.UpsertFile(
-    csv_path="csv/pets.csv",
-    upsert_sql="""
-        INSERT OR IGNORE INTO
-        pet_skills (name, type, description)
-        VALUES (:skill1, '', '');
-    """,
-)
 
-PET_SKILLS_MISSING2 = common.UpsertFile(
-    csv_path="csv/pets.csv",
-    upsert_sql="""
-        INSERT OR IGNORE INTO
-        pet_skills (name, type, description)
-        VALUES (:skill2, '', '');
-    """,
-)
+def PET_SKILLS_MISSING(n: int) -> common.UpsertFile:
+    return common.UpsertFile(
+        csv_path="csv/pets.csv",
+        upsert_sql=f"""
+            INSERT OR IGNORE INTO
+            pet_skills (name, type, description)
+            VALUES (:skill{n}, '', '');
+        """,
+    )
 
-PET_SKILLS_MISSING3 = common.UpsertFile(
-    csv_path="csv/pets.csv",
-    upsert_sql="""
-        INSERT OR IGNORE INTO
-        pet_skills (name, type, description)
-        VALUES (:skill3, '', '');
-    """,
-)
-
-PET_SKILLS_MISSING4 = common.UpsertFile(
-    csv_path="csv/pets.csv",
-    upsert_sql="""
-        INSERT OR IGNORE INTO
-        pet_skills (name, type, description)
-        VALUES (:skill4, '', '');
-    """,
-)
-
-PET_SKILLS_MISSING5 = common.UpsertFile(
-    csv_path="csv/pets.csv",
-    upsert_sql="""
-        INSERT OR IGNORE INTO
-        pet_skills (name, type, description)
-        VALUES (:skill5, '', '');
-    """,
-)
 
 PETS = common.UpsertFile(
     csv_path="csv/pets.csv",
@@ -92,8 +59,8 @@ PETS = common.UpsertFile(
             skill5,
             hatch_exp
         ) VALUES (
-            :name,
-            :type,
+            TRIM(:name),
+            TRIM(UPPER(:type)),
             (SELECT id FROM pet_skills WHERE name = TRIM(:skill1)),
             (SELECT id FROM pet_skills WHERE name = TRIM(:skill2)),
             (SELECT id FROM pet_skills WHERE name = TRIM(:skill3)),
@@ -118,7 +85,7 @@ PET_CATCH_ITEMS = common.UpsertFile(
                 FROM pets
                 WHERE name = TRIM(:name)
             ),
-            :item_name,
+            TRIM(:item_name),
             :unit_price_shells,
             :quantity
         );
@@ -128,11 +95,8 @@ PET_CATCH_ITEMS = common.UpsertFile(
 
 def main() -> None:
     PET_SKILLS.execute()
-    PET_SKILLS_MISSING1.execute()
-    PET_SKILLS_MISSING2.execute()
-    PET_SKILLS_MISSING3.execute()
-    PET_SKILLS_MISSING4.execute()
-    PET_SKILLS_MISSING5.execute()
+    for skill_id in range(1, 6):
+        PET_SKILLS_MISSING(skill_id).execute()
     PETS.execute()
     PET_CATCH_ITEMS.execute()
     common.db.commit()
