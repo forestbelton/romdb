@@ -4,7 +4,7 @@ import "./Dropdown.css";
 
 type DropdownProps = {
   title: string;
-  children: typeof React.Children;
+  children: any;
   style?: React.CSSProperties;
   titleStyle?: React.CSSProperties;
   contentStyle?: React.CSSProperties;
