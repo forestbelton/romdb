@@ -1,126 +1,126 @@
-recipe_name,num_stars
-Rookie Fish Steak,1
-Rookie Fried Dish,1
-Rookie Jam,1
-Rookie Meat Steak,1
-Healthy Salad,2
-Seafood Bowl,2
-Traveler Bacon,2
-Seafood Rice,3
-Delicious Steak,3
-Vegetable Meal,3
-East Seafood Kebab,4
-Flame God History,4
-Spicy Branch Vegetable,4
-Yummy Fish Steak,5
-Yummy Salad,5
-Yummy Steak,5
-Fantasy Salad,6
-Fantasy Seafood Kebab,6
-Fantasy Steak,6
-Forest Treasure,7
-Geffen Steak,7
-Hydra,7
-Desert Steak,8
-Fishman's Soul,8
-Sweet Coriander,8
-Prontera Royal Fish Steak,9
-Prontera Royal Salad,9
-Prontera Royal Steak,9
-Original Will-Fish Steak,10
-Original Will-Salad,10
-Original Will-Steak,10
-Rookie Fruit Slices,1
-Rookie Meat Kebab,1
-Rookie Seafood Kebab,1
-Rookie Vegetable Kebab,1
-Satisfied Feast,1
-Island Kebab,2
-Magic Meat Kebab,2
-MSG,2
-Popular Kebab,2
-Izlude Pride,3
-Starving Kebabs,3
-Farmer's Smile,4
-Flame Vegetable Kebab,4
-Gold Kebab,4
-Superb Seafood Kebab,4
-Yummy Kebab,5
-Yummy Seafood Kebab,5
-Yummy Vegetables,5
-Magic Green BBQ,6
-Magic Seafood Kebab,6
-Call From Ocean,7
-Gold Cross Kebab,7
-Payon's Vegetable Kebab,7
-Giant Pagoda,8
-Sky Blade,8
-Trubius Seafood Kebab,8
-Prontera Royal Fish Kebab,9
-Prontera Royal Green BBQ,9
-Prontera Royal Kebab,9
-Original Will-Fish Kebab,10
-Original Will-Green Kebab,10
-Original Will-Kebab,10
-Rookie Black Tea,1
-Rookie Broth,1
-Rookie Fish Soup,1
-Rookie Vegetable Soup,1
-Fish Head Soup,2
-Fragrant Broth,2
-Mum's Soup,2
-Delicious Vegetable Soup,3
-Music Box Broth,3
-Warm Current,3
-Satisfied,4
-Singing Soul,4
-Warm Oasis,4
-Yummy Broth,5
-Yummy Seafood Soup,5
-Yummy Vegetable Soup,5
-Fantasy Broth,6
-Fantasy Fish Soup,6
-Fantasy Vegetable Soup,6
-Al De Baran Fish Soup,7
-Mother's Hug,7
-Princess' Black Tea,7
-Brandy March,8
-Sage in Dark,8
-Song for You,8
-Prontera Royal Broth,9
-Prontera Royal Seafood Soup,9
-Prontera Royal Vegetable Soup,9
-Original Will-Broth,10
-Original Will-Seafood Soup,10
-Original Will-Vegetable Soup,10
-Rookie Fruit Plate,1
-Rookie Salad,1
-Rookie Sashimi,1
-Rookie Sushi,1
-Ice Cream,2
-Ray Dessert,2
-Smokie Cookie,2
-Cheese Cake,3
-Poring Parfait,3
-Seaside Black Tea,3
-Ancient Ice Honey,4
-Duke Juice,4
-Vantican Bread,4
-Yummy Cake,5
-Yummy Cookie,5
-Yummy Tea,5
-Magic Bread,6
-Magic Cookie,6
-Magic Ice Cream,6
-Bigfoot Forest Cookie,7
-Merchant City's Cake,7
-Noble Black Tea,7
-Gatler's Palace,8
-Princess' Afternoon Tea,8
-Summer Star,8
-Prontera Royal Cookie,9
-Prontera Royal Ice Cream,9
-Prontera Royal Juice,9
-Original Will-Cookies,10
-Original Will-Ice Cream,10
-Original Will-Juice,10
+recipe_name,num_stars,cook_mastery_effect,cook_mastery_value,taste_mastery_effect,taste_mastery_value
+Rookie Fish Steak,1,ATTACK,1.5,ATTACK,1.0
+Rookie Fried Dish,1,MAX_SP,3.0,MAX_SP,2.0
+Rookie Jam,1,MAGIC_ATTACK,1.5,MAGIC_ATTACK,1.0
+Rookie Meat Steak,1,MAX_HP,15.0,MAX_HP,10.0
+Healthy Salad,2,MAGIC_ATTACK,1.5,MAGIC_ATTACK,1.0
+Seafood Bowl,2,MAX_HP,15.0,ATTACK,1.0
+Traveler Bacon,2,DEFENSE,1.5,DEFENSE,1.0
+Seafood Rice,3,MAX_HP,15.0,ATTACK,1.0
+Delicious Steak,3,DEFENSE,1.5,MAGIC_DEFENSE,1.0
+Vegetable Meal,3,MAGIC_ATTACK,1.5,MAGIC_ATTACK,1.0
+East Seafood Kebab,4,MAX_HP,30.0,ATTACK,2.0
+Flame God History,4,DEFENSE,3.0,MAX_HP,20.0
+Spicy Branch Vegetable,4,MAGIC_ATTACK,3.0,ATTACK,2.0
+Yummy Fish Steak,5,MAX_SP,6.0,ATTACK,2.0
+Yummy Salad,5,MAGIC_ATTACK,3.0,MAX_SP,4.0
+Yummy Steak,5,DEFENSE,3.0,MAX_HP,20.0
+Fantasy Salad,6,MAX_SP,6.0,MAGIC_ATTACK,2.0
+Fantasy Seafood Kebab,6,MAX_HP,30.0,ATTACK,2.0
+Fantasy Steak,6,DEFENSE,3.0,MAX_HP,20.0
+Forest Treasure,7,MAX_SP,6.0,MAGIC_ATTACK,2.0
+Geffen Steak,7,DEFENSE,3.0,MAX_HP,20.0
+Hydra,7,ATTACK,3.0,ATTACK,2.0
+Desert Steak,8,DEFENSE,4.5,MAX_HP,30.0
+Fishman's Soul,8,ATTACK,4.5,ATTACK,3.0
+Sweet Coriander,8,MAX_SP,9.0,MAGIC_ATTACK,3.0
+Prontera Royal Fish Steak,9,ATTACK,4.5,ATTACK,3.0
+Prontera Royal Salad,9,MAX_SP,9.0,MAGIC_DEFENSE,3.0
+Prontera Royal Steak,9,DEFENSE,4.5,MAX_HP,30.0
+Original Will-Fish Steak,10,ATTACK,4.5,ATTACK,3.0
+Original Will-Salad,10,MAX_SP,9.0,MAGIC_DEFENSE,3.0
+Original Will-Steak,10,DEFENSE,4.5,MAX_HP,30.0
+Rookie Fruit Slices,1,MAGIC_ATTACK,1.5,MAGIC_ATTACK,1.0
+Rookie Meat Kebab,1,MAX_HP,15.0,MAX_HP,10.0
+Rookie Seafood Kebab,1,ATTACK,1.5,ATTACK,1.0
+Rookie Vegetable Kebab,1,MAX_SP,3.0,MAX_SP,2.0
+Satisfied Feast,1,ATTACK,4.5,MAX_HP,30.0
+Island Kebab,2,ATTACK,1.5,ATTACK,1.0
+Magic Meat Kebab,2,MAGIC_ATTACK,3.0,DEFENSE,2.0
+MSG,2,MAGIC_DEFENSE,1.5,MAX_SP,2.0
+Popular Kebab,2,DEFENSE,1.5,MAX_HP,10.0
+Izlude Pride,3,ATTACK,1.5,DEFENSE,1.0
+Starving Kebabs,3,DEFENSE,1.5,MAGIC_DEFENSE,1.0
+Farmer's Smile,4,MAX_SP,3.0,MAGIC_DEFENSE,1.0
+Flame Vegetable Kebab,4,MAX_SP,6.0,MAGIC_DEFENSE,2.0
+Gold Kebab,4,MAGIC_DEFENSE,3.0,DEFENSE,2.0
+Superb Seafood Kebab,4,ATTACK,3.0,DEFENSE,2.0
+Yummy Kebab,5,DEFENSE,3.0,MAGIC_DEFENSE,2.0
+Yummy Seafood Kebab,5,ATTACK,3.0,DEFENSE,2.0
+Yummy Vegetables,5,MAGIC_DEFENSE,3.0,MAGIC_ATTACK,2.0
+Magic Green BBQ,6,MAGIC_ATTACK,3.0,MAGIC_DEFENSE,2.0
+Magic Seafood Kebab,6,ATTACK,3.0,MAGIC_DEFENSE,2.0
+Call From Ocean,7,ATTACK,3.0,DEFENSE,2.0
+Gold Cross Kebab,7,MAX_HP,30.0,DEFENSE,2.0
+Payon's Vegetable Kebab,7,MAGIC_DEFENSE,3.0,MAGIC_ATTACK,2.0
+Giant Pagoda,8,MAX_HP,45.0,DEFENSE,3.0
+Sky Blade,8,MAGIC_DEFENSE,4.5,MAGIC_ATTACK,3.0
+Trubius Seafood Kebab,8,ATTACK,4.5,DEFENSE,3.0
+Prontera Royal Fish Kebab,9,ATTACK,4.5,DEFENSE,3.0
+Prontera Royal Green BBQ,9,MAGIC_ATTACK,4.5,MAGIC_DEFENSE,3.0
+Prontera Royal Kebab,9,MAX_HP,45.0,DEFENSE,3.0
+Original Will-Fish Kebab,10,ATTACK,4.5,DEFENSE,3.0
+Original Will-Green Kebab,10,MAGIC_ATTACK,4.5,MAGIC_DEFENSE,3.0
+Original Will-Kebab,10,MAX_HP,45.0,DEFENSE,3.0
+Rookie Black Tea,1,MAGIC_ATTACK,1.5,MAGIC_ATTACK,1.0
+Rookie Broth,1,MAX_HP,15.0,MAX_HP,10.0
+Rookie Fish Soup,1,ATTACK,1.5,ATTACK,1.0
+Rookie Vegetable Soup,1,MAX_SP,3.0,MAX_SP,2.0
+Fish Head Soup,2,ATTACK,1.5,ATTACK,1.0
+Fragrant Broth,2,DEFENSE,1.5,DEFENSE,1.0
+Mum's Soup,2,MAGIC_DEFENSE,1.5,MAGIC_ATTACK,1.0
+Delicious Vegetable Soup,3,MAGIC_DEFENSE,1.5,MAGIC_ATTACK,1.0
+Music Box Broth,3,DEFENSE,1.5,MAX_HP,10.0
+Warm Current,3,MAGIC_DEFENSE,1.5,ATTACK,1.0
+Satisfied,4,DEFENSE,3.0,MAX_SP,4.0
+Singing Soul,4,MAGIC_DEFENSE,3.0,ATTACK,2.0
+Warm Oasis,4,MAGIC_ATTACK,3.0,MAGIC_DEFENSE,2.0
+Yummy Broth,5,MAX_HP,30.0,DEFENSE,2.0
+Yummy Seafood Soup,5,MAGIC_DEFENSE,3.0,ATTACK,2.0
+Yummy Vegetable Soup,5,MAGIC_ATTACK,3.0,MAGIC_DEFENSE,2.0
+Fantasy Broth,6,DEFENSE,3.0,MAGIC_DEFENSE,2.0
+Fantasy Fish Soup,6,ATTACK,3.0,DEFENSE,2.0
+Fantasy Vegetable Soup,6,MAGIC_DEFENSE,3.0,MAX_SP,4.0
+Al De Baran Fish Soup,7,ATTACK,3.0,MAGIC_DEFENSE,2.0
+Mother's Hug,7,DEFENSE,3.0,MAGIC_DEFENSE,2.0
+Princess' Black Tea,7,MAGIC_DEFENSE,3.0,MAX_SP,4.0
+Brandy March,8,DEFENSE,4.5,MAGIC_DEFENSE,3.0
+Sage in Dark,8,MAGIC_DEFENSE,4.5,MAX_SP,6.0
+Song for You,8,ATTACK,4.5,MAGIC_DEFENSE,3.0
+Prontera Royal Broth,9,MAGIC_DEFENSE,4.5,MAGIC_DEFENSE,3.0
+Prontera Royal Seafood Soup,9,MAGIC_DEFENSE,4.5,ATTACK,3.0
+Prontera Royal Vegetable Soup,9,MAGIC_DEFENSE,4.5,MAX_SP,6.0
+Original Will-Broth,10,DEFENSE,4.5,MAGIC_DEFENSE,3.0
+Original Will-Seafood Soup,10,MAGIC_DEFENSE,4.5,ATTACK,3.0
+Original Will-Vegetable Soup,10,MAGIC_DEFENSE,4.5,MAX_SP,6.0
+Rookie Fruit Plate,1,MAGIC_ATTACK,1.5,MAGIC_ATTACK,1.0
+Rookie Salad,1,MAX_SP,3.0,MAX_SP,2.0
+Rookie Sashimi,1,MAX_HP,15.0,MAX_HP,10.0
+Rookie Sushi,1,ATTACK,1.5,ATTACK,1.0
+Ice Cream,2,MAGIC_ATTACK,1.5,DEFENSE,1.0
+Ray Dessert,2,MAX_SP,3.0,MAGIC_DEFENSE,1.0
+Smokie Cookie,2,MAGIC_ATTACK,1.5,MAGIC_ATTACK,1.0
+Cheese Cake,3,MAGIC_ATTACK,1.5,MAX_SP,2.0
+Poring Parfait,3,ATTACK,1.5,MAGIC_ATTACK,1.0
+Seaside Black Tea,3,MAGIC_ATTACK,1.5,DEFENSE,1.0
+Ancient Ice Honey,4,ATTACK,3.0,MAGIC_ATTACK,2.0
+Duke Juice,4,MAGIC_ATTACK,3.0,DEFENSE,2.0
+Vantican Bread,4,DEFENSE,3.0,MAGIC_DEFENSE,2.0
+Yummy Cake,5,MAGIC_ATTACK,3.0,DEFENSE,2.0
+Yummy Cookie,5,ATTACK,3.0,MAGIC_ATTACK,2.0
+Yummy Tea,5,DEFENSE,3.0,MAGIC_DEFENSE,2.0
+Magic Bread,6,DEFENSE,3.0,MAGIC_ATTACK,2.0
+Magic Cookie,6,ATTACK,3.0,MAGIC_ATTACK,2.0
+Magic Ice Cream,6,MAGIC_DEFENSE,3.0,DEFENSE,2.0
+Bigfoot Forest Cookie,7,MAGIC_ATTACK,3.0,ATTACK,2.0
+Merchant City's Cake,7,DEFENSE,3.0,MAGIC_DEFENSE,2.0
+Noble Black Tea,7,MAGIC_ATTACK,3.0,DEFENSE,2.0
+Gatler's Palace,8,MAGIC_ATTACK,4.5,ATTACK,3.0
+Princess' Afternoon Tea,8,DEFENSE,4.5,MAGIC_DEFENSE,3.0
+Summer Star,8,MAGIC_ATTACK,4.5,DEFENSE,3.0
+Prontera Royal Cookie,9,MAGIC_DEFENSE,4.5,DEFENSE,3.0
+Prontera Royal Ice Cream,9,ATTACK,4.5,MAGIC_ATTACK,2.0
+Prontera Royal Juice,9,DEFENSE,4.5,MAGIC_ATTACK,3.0
+Original Will-Cookies,10,MAGIC_DEFENSE,4.5,DEFENSE,3.0
+Original Will-Ice Cream,10,ATTACK,4.5,MAGIC_ATTACK,3.0
+Original Will-Juice,10,DEFENSE,4.5,MAGIC_ATTACK,3.0

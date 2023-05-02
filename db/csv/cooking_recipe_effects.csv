@@ -1,0 +1,529 @@
+recipe_name,effect,value
+Rookie Fish Steak,MAX_HP,60.0
+Rookie Fish Steak,MAX_SP,6.0
+Rookie Fish Steak,ATTACK,8.0
+Rookie Fried Dish,MAX_HP,60.0
+Rookie Fried Dish,MAX_SP,6.0
+Rookie Fried Dish,DEFENSE,8.0
+Rookie Jam,MAX_HP,60.0
+Rookie Jam,MAX_SP,6.0
+Rookie Jam,MAGIC_ATTACK,8.0
+Rookie Meat Steak,MAX_HP,60.0
+Rookie Meat Steak,MAX_SP,6.0
+Rookie Meat Steak,DEFENSE,8.0
+Healthy Salad,MAX_HP,90.0
+Healthy Salad,MAX_SP,9.0
+Healthy Salad,MAGIC_ATTACK,12.0
+Seafood Bowl,MAX_HP,90.0
+Seafood Bowl,MAX_SP,9.0
+Seafood Bowl,ATTACK,12.0
+Traveler Bacon,MAX_HP,90.0
+Traveler Bacon,MAX_SP,9.0
+Traveler Bacon,DEFENSE,12.0
+Seafood Rice,MAX_HP,120.0
+Seafood Rice,MAX_SP,12.0
+Seafood Rice,ATTACK,16.0
+Seafood Rice,MOVE_SPEED,1.0
+Delicious Steak,MAX_HP,120.0
+Delicious Steak,MAX_SP,12.0
+Delicious Steak,DEFENSE,16.0
+Delicious Steak,MAGIC_DEFENSE,16.0
+Delicious Steak,COMPLEX,*(2x Immune to CC)
+Vegetable Meal,MAX_HP,120.0
+Vegetable Meal,MAX_SP,12.0
+Vegetable Meal,MAGIC_ATTACK,16.0
+Vegetable Meal,CAST_DELAY,0.75
+East Seafood Kebab,MAX_HP,180.0
+East Seafood Kebab,MAX_SP,18.0
+East Seafood Kebab,ATTACK,20.0
+East Seafood Kebab,MOVE_SPEED,1.5
+Flame God History,MAX_HP,180.0
+Flame God History,MAX_SP,18.0
+Flame God History,DEFENSE,20.0
+Flame God History,COMPLEX,*(3x Immune to CC)
+Spicy Branch Vegetable,MAX_HP,180.0
+Spicy Branch Vegetable,MAX_SP,18.0
+Spicy Branch Vegetable,MAGIC_ATTACK,20.0
+Spicy Branch Vegetable,CAST_DELAY,1.0
+Yummy Fish Steak,MAX_HP,216.0
+Yummy Fish Steak,MAX_SP,21.0
+Yummy Fish Steak,ATTACK,24.0
+Yummy Fish Steak,MOVE_SPEED,1.75
+Yummy Salad,MAX_HP,216.0
+Yummy Salad,MAX_SP,21.0
+Yummy Salad,MAGIC_ATTACK,24.0
+Yummy Salad,CAST_DELAY,1.25
+Yummy Steak,MAX_HP,216.0
+Yummy Steak,MAX_SP,21.0
+Yummy Steak,DEFENSE,24.0
+Yummy Steak,COMPLEX,*(3x Immune to CC)
+Fantasy Salad,MAX_HP,300.0
+Fantasy Salad,MAX_SP,30.0
+Fantasy Salad,MAGIC_ATTACK,30.0
+Fantasy Salad,CAST_DELAY,1.5
+Fantasy Seafood Kebab,MAX_HP,300.0
+Fantasy Seafood Kebab,MAX_SP,30.0
+Fantasy Seafood Kebab,ATTACK,30.0
+Fantasy Seafood Kebab,MOVE_SPEED,2.0
+Fantasy Steak,MAX_HP,300.0
+Fantasy Steak,MAX_SP,30.0
+Fantasy Steak,DEFENSE,30.0
+Fantasy Steak,COMPLEX,*(4x Immune to CC)
+Forest Treasure,MAX_HP,360.0
+Forest Treasure,MAX_SP,36.0
+Forest Treasure,MAGIC_ATTACK,32.0
+Forest Treasure,CAST_DELAY,1.75
+Geffen Steak,MAX_HP,360.0
+Geffen Steak,MAX_SP,36.0
+Geffen Steak,DEFENSE,32.0
+Geffen Steak,COMPLEX,*(4x Immune to CC)
+Hydra,MAX_HP,360.0
+Hydra,MAX_SP,36.0
+Hydra,ATTACK,32.0
+Hydra,MOVE_SPEED,2.5
+Desert Steak,MAX_HP,420.0
+Desert Steak,MAX_SP,42.0
+Desert Steak,DEFENSE,36.0
+Desert Steak,COMPLEX,*(4x Immune to CC)
+Fishman's Soul,MAX_HP,420.0
+Fishman's Soul,MAX_SP,42.0
+Fishman's Soul,ATTACK,36.0
+Fishman's Soul,MOVE_SPEED,3.0
+Sweet Coriander,MAX_HP,420.0
+Sweet Coriander,MAX_SP,42.0
+Sweet Coriander,MAGIC_ATTACK,36.0
+Sweet Coriander,CAST_DELAY,2.0
+Prontera Royal Fish Steak,MAX_HP,500.0
+Prontera Royal Fish Steak,MAX_SP,50.0
+Prontera Royal Fish Steak,ATTACK,38.0
+Prontera Royal Fish Steak,MOVE_SPEED,3.25
+Prontera Royal Salad,MAX_HP,500.0
+Prontera Royal Salad,MAX_SP,50.0
+Prontera Royal Salad,MAGIC_DEFENSE,38.0
+Prontera Royal Salad,CAST_DELAY,2.25
+Prontera Royal Salad,COMPLEX,**(2x Immune to Death)
+Prontera Royal Steak,MAX_HP,500.0
+Prontera Royal Steak,MAX_SP,50.0
+Prontera Royal Steak,DEFENSE,38.0
+Prontera Royal Steak,COMPLEX,*(4x Immune to CC)
+Original Will-Fish Steak,MAX_HP,600.0
+Original Will-Fish Steak,MAX_SP,60.0
+Original Will-Fish Steak,ATTACK,40.0
+Original Will-Fish Steak,MOVE_SPEED,3.5
+Original Will-Salad,MAX_HP,600.0
+Original Will-Salad,MAX_SP,60.0
+Original Will-Salad,MAGIC_DEFENSE,40.0
+Original Will-Salad,CAST_DELAY,2.5
+Original Will-Steak,MAX_HP,600.0
+Original Will-Steak,MAX_SP,60.0
+Original Will-Steak,DEFENSE,40.0
+Original Will-Steak,COMPLEX,*(4x Immune to CC)
+Rookie Fruit Slices,MAX_HP,60.0
+Rookie Fruit Slices,MAX_SP,6.0
+Rookie Fruit Slices,MAGIC_ATTACK,8.0
+Rookie Meat Kebab,MAX_HP,60.0
+Rookie Meat Kebab,MAX_SP,6.0
+Rookie Meat Kebab,DEFENSE,8.0
+Rookie Seafood Kebab,MAX_HP,60.0
+Rookie Seafood Kebab,MAX_SP,6.0
+Rookie Seafood Kebab,ATTACK,8.0
+Rookie Vegetable Kebab,MAX_HP,60.0
+Rookie Vegetable Kebab,MAX_SP,6.0
+Rookie Vegetable Kebab,MAGIC_DEFENSE,8.0
+Satisfied Feast,MAX_HP,500.0
+Satisfied Feast,MAX_SP,50.0
+Satisfied Feast,ATTACK,40.0
+Satisfied Feast,MAGIC_DEFENSE,40.0
+Satisfied Feast,PENETRATION,2.5
+Satisfied Feast,MAGIC_PENETRATION,2.5
+Island Kebab,MAX_HP,90.0
+Island Kebab,MAX_SP,9.0
+Island Kebab,ATTACK,12.0
+Magic Meat Kebab,MAX_HP,500.0
+Magic Meat Kebab,MAX_SP,30.0
+Magic Meat Kebab,MAGIC_ATTACK,30.0
+Magic Meat Kebab,DEFENSE,30.0
+MSG,MAX_HP,90.0
+MSG,MAX_SP,9.0
+MSG,MAGIC_DEFENSE,12.0
+Popular Kebab,MAX_HP,90.0
+Popular Kebab,MAX_SP,9.0
+Popular Kebab,DEFENSE,12.0
+Izlude Pride,MAX_HP,120.0
+Izlude Pride,MAX_SP,12.0
+Izlude Pride,ATTACK,16.0
+Izlude Pride,DEFENSE,16.0
+Izlude Pride,PLAYER_DMG,0.75
+Starving Kebabs,MAX_HP,200.0
+Starving Kebabs,MAX_SP,12.0
+Starving Kebabs,DEFENSE,16.0
+Starving Kebabs,MAGIC_DEFENSE,16.0
+Farmer's Smile,MAX_HP,120.0
+Farmer's Smile,MAX_SP,12.0
+Farmer's Smile,MAGIC_DEFENSE,16.0
+Flame Vegetable Kebab,MAX_HP,180.0
+Flame Vegetable Kebab,MAX_SP,18.0
+Flame Vegetable Kebab,MAGIC_DEFENSE,20.0
+Gold Kebab,MAX_HP,300.0
+Gold Kebab,MAX_SP,18.0
+Gold Kebab,DEFENSE,20.0
+Gold Kebab,MAGIC_DEFENSE,20.0
+Superb Seafood Kebab,MAX_HP,180.0
+Superb Seafood Kebab,MAX_SP,18.0
+Superb Seafood Kebab,ATTACK,20.0
+Superb Seafood Kebab,DEFENSE,20.0
+Superb Seafood Kebab,PLAYER_DMG,1.0
+Yummy Kebab,MAX_HP,360.0
+Yummy Kebab,MAX_SP,21.0
+Yummy Kebab,DEFENSE,24.0
+Yummy Kebab,MAGIC_DEFENSE,24.0
+Yummy Seafood Kebab,MAX_HP,216.0
+Yummy Seafood Kebab,MAX_SP,21.0
+Yummy Seafood Kebab,ATTACK,24.0
+Yummy Seafood Kebab,DEFENSE,24.0
+Yummy Seafood Kebab,PLAYER_DMG,1.25
+Yummy Vegetables,MAX_HP,216.0
+Yummy Vegetables,MAX_SP,21.0
+Yummy Vegetables,MAGIC_ATTACK,24.0
+Yummy Vegetables,MAGIC_DEFENSE,24.0
+Magic Green BBQ,MAX_HP,300.0
+Magic Green BBQ,MAX_SP,30.0
+Magic Green BBQ,MAGIC_ATTACK,30.0
+Magic Green BBQ,MAGIC_DEFENSE,30.0
+Magic Green BBQ,COMPLEX,**(1x Immune to Death)
+Magic Seafood Kebab,MAX_HP,300.0
+Magic Seafood Kebab,MAX_SP,30.0
+Magic Seafood Kebab,ATTACK,30.0
+Magic Seafood Kebab,MAGIC_DEFENSE,30.0
+Magic Seafood Kebab,PLAYER_DMG,1.5
+Call From Ocean,MAX_HP,360.0
+Call From Ocean,MAX_SP,36.0
+Call From Ocean,ATTACK,32.0
+Call From Ocean,DEFENSE,32.0
+Call From Ocean,PLAYER_DMG,1.75
+Call From Ocean,COMPLEX,**(1x Immune to Death)
+Gold Cross Kebab,MAX_HP,600.0
+Gold Cross Kebab,MAX_SP,36.0
+Gold Cross Kebab,DEFENSE,32.0
+Payon's Vegetable Kebab,MAX_HP,360.0
+Payon's Vegetable Kebab,MAX_SP,36.0
+Payon's Vegetable Kebab,MAGIC_ATTACK,32.0
+Payon's Vegetable Kebab,MAGIC_DEFENSE,32.0
+Giant Pagoda,MAX_HP,700.0
+Giant Pagoda,MAX_SP,42.0
+Giant Pagoda,DEFENSE,36.0
+Sky Blade,MAX_HP,420.0
+Sky Blade,MAX_SP,42.0
+Sky Blade,MAGIC_ATTACK,36.0
+Sky Blade,MAGIC_DEFENSE,36.0
+Sky Blade,COMPLEX,**(1x Immune to Death)
+Trubius Seafood Kebab,MAX_HP,420.0
+Trubius Seafood Kebab,MAX_SP,42.0
+Trubius Seafood Kebab,ATTACK,36.0
+Trubius Seafood Kebab,DEFENSE,36.0
+Trubius Seafood Kebab,PLAYER_DMG,2.0
+Prontera Royal Fish Kebab,MAX_HP,500.0
+Prontera Royal Fish Kebab,MAX_SP,50.0
+Prontera Royal Fish Kebab,ATTACK,38.0
+Prontera Royal Fish Kebab,DEFENSE,38.0
+Prontera Royal Fish Kebab,PLAYER_DMG,2.25
+Prontera Royal Green BBQ,MAX_HP,500.0
+Prontera Royal Green BBQ,MAX_SP,50.0
+Prontera Royal Green BBQ,MAGIC_DEFENSE,38.0
+Prontera Royal Green BBQ,CAST_DELAY,2.25
+Prontera Royal Kebab,MAX_HP,830.0
+Prontera Royal Kebab,MAX_SP,50.0
+Prontera Royal Kebab,DEFENSE,38.0
+Original Will-Fish Kebab,MAX_HP,600.0
+Original Will-Fish Kebab,MAX_SP,60.0
+Original Will-Fish Kebab,ATTACK,40.0
+Original Will-Fish Kebab,DEFENSE,40.0
+Original Will-Fish Kebab,PLAYER_DMG,2.5
+Original Will-Green Kebab,MAX_HP,600.0
+Original Will-Green Kebab,MAX_SP,60.0
+Original Will-Green Kebab,MAGIC_ATTACK,40.0
+Original Will-Green Kebab,MAGIC_DEFENSE,40.0
+Original Will-Green Kebab,COMPLEX,**(2x Immune to Death)
+Original Will-Kebab,MAX_HP,1000.0
+Original Will-Kebab,MAX_SP,60.0
+Original Will-Kebab,DEFENSE,40.0
+Rookie Black Tea,MAX_HP,60.0
+Rookie Black Tea,MAX_SP,6.0
+Rookie Black Tea,MAGIC_ATTACK,8.0
+Rookie Broth,MAX_HP,60.0
+Rookie Broth,MAX_SP,6.0
+Rookie Broth,DEFENSE,8.0
+Rookie Fish Soup,MAX_HP,60.0
+Rookie Fish Soup,MAX_SP,6.0
+Rookie Fish Soup,ATTACK,8.0
+Rookie Vegetable Soup,MAX_HP,60.0
+Rookie Vegetable Soup,MAX_SP,6.0
+Rookie Vegetable Soup,MAGIC_DEFENSE,8.0
+Fish Head Soup,MAX_HP,90.0
+Fish Head Soup,MAX_SP,9.0
+Fish Head Soup,ATTACK,12.0
+Fragrant Broth,MAX_HP,90.0
+Fragrant Broth,MAX_SP,9.0
+Fragrant Broth,DEFENSE,21.0
+Mum's Soup,MAX_HP,90.0
+Mum's Soup,MAX_SP,9.0
+Mum's Soup,MAGIC_ATTACK,12.0
+Mum's Soup,MAGIC_DEFENSE,12.0
+Delicious Vegetable Soup,MAX_HP,120.0
+Delicious Vegetable Soup,MAX_SP,12.0
+Delicious Vegetable Soup,MAGIC_ATTACK,16.0
+Delicious Vegetable Soup,MAGIC_DEFENSE,16.0
+Music Box Broth,MAX_HP,12.0
+Music Box Broth,MAX_SP,12.0
+Music Box Broth,DEFENSE,16.0
+Music Box Broth,ATTACK_SPEED,1.0
+Warm Current,MAX_HP,120.0
+Warm Current,MAX_SP,12.0
+Warm Current,ATTACK,16.0
+Warm Current,MAGIC_DEFENSE,16.0
+Warm Current,IGNORE_DEFENSE,0.75
+Satisfied,MAX_HP,180.0
+Satisfied,MAX_SP,18.0
+Satisfied,DEFENSE,20.0
+Satisfied,ATTACK_SPEED,1.5
+Singing Soul,MAX_HP,180.0
+Singing Soul,MAX_SP,18.0
+Singing Soul,ATTACK,20.0
+Singing Soul,MAGIC_DEFENSE,20.0
+Singing Soul,IGNORE_DEFENSE,1.0
+Warm Oasis,MAX_HP,180.0
+Warm Oasis,MAX_SP,18.0
+Warm Oasis,MAGIC_ATTACK,20.0
+Warm Oasis,MAGIC_DEFENSE,20.0
+Yummy Broth,MAX_HP,216.0
+Yummy Broth,MAX_SP,21.0
+Yummy Broth,DEFENSE,24.0
+Yummy Broth,ATTACK_SPEED,1.75
+Yummy Seafood Soup,MAX_HP,216.0
+Yummy Seafood Soup,MAX_SP,21.0
+Yummy Seafood Soup,ATTACK,24.0
+Yummy Seafood Soup,MAGIC_DEFENSE,24.0
+Yummy Seafood Soup,IGNORE_DEFENSE,1.25
+Yummy Vegetable Soup,MAX_HP,216.0
+Yummy Vegetable Soup,MAX_SP,21.0
+Yummy Vegetable Soup,MAGIC_ATTACK,24.0
+Yummy Vegetable Soup,MAGIC_DEFENSE,24.0
+Fantasy Broth,MAX_HP,300.0
+Fantasy Broth,MAX_SP,30.0
+Fantasy Broth,DEFENSE,30.0
+Fantasy Broth,MAGIC_DEFENSE,30.0
+Fantasy Broth,ATTACK_SPEED,2.0
+Fantasy Fish Soup,MAX_HP,300.0
+Fantasy Fish Soup,MAX_SP,30.0
+Fantasy Fish Soup,ATTACK,30.0
+Fantasy Fish Soup,DEFENSE,30.0
+Fantasy Fish Soup,IGNORE_DEFENSE,1.5
+Fantasy Vegetable Soup,MAX_HP,300.0
+Fantasy Vegetable Soup,MAX_SP,30.0
+Fantasy Vegetable Soup,MAGIC_ATTACK,30.0
+Fantasy Vegetable Soup,MAGIC_DEFENSE,30.0
+Al De Baran Fish Soup,MAX_HP,360.0
+Al De Baran Fish Soup,MAX_SP,36.0
+Al De Baran Fish Soup,ATTACK,32.0
+Al De Baran Fish Soup,MAGIC_DEFENSE,32.0
+Al De Baran Fish Soup,IGNORE_DEFENSE,1.75
+Mother's Hug,MAX_HP,360.0
+Mother's Hug,MAX_SP,36.0
+Mother's Hug,DEFENSE,32.0
+Mother's Hug,MAGIC_DEFENSE,32.0
+Mother's Hug,ATTACK_SPEED,2.5
+Princess' Black Tea,MAX_HP,360.0
+Princess' Black Tea,MAX_SP,36.0
+Princess' Black Tea,MAGIC_ATTACK,32.0
+Princess' Black Tea,MAGIC_DEFENSE,32.0
+Brandy March,MAX_HP,420.0
+Brandy March,MAX_SP,42.0
+Brandy March,DEFENSE,36.0
+Brandy March,MAGIC_DEFENSE,36.0
+Brandy March,ATTACK_SPEED,3.0
+Sage in Dark,MAX_HP,420.0
+Sage in Dark,MAX_SP,42.0
+Sage in Dark,MAGIC_ATTACK,36.0
+Sage in Dark,MAGIC_DEFENSE,36.0
+Song for You,MAX_HP,420.0
+Song for You,MAX_SP,42.0
+Song for You,ATTACK,36.0
+Song for You,MAGIC_DEFENSE,36.0
+Song for You,IGNORE_DEFENSE,2.0
+Prontera Royal Broth,MAX_HP,500.0
+Prontera Royal Broth,MAX_SP,50.0
+Prontera Royal Broth,DEFENSE,38.0
+Prontera Royal Broth,MAGIC_DEFENSE,38.0
+Prontera Royal Broth,ATTACK_SPEED,3.25
+Prontera Royal Seafood Soup,MAX_HP,500.0
+Prontera Royal Seafood Soup,MAX_SP,50.0
+Prontera Royal Seafood Soup,ATTACK,38.0
+Prontera Royal Seafood Soup,MAGIC_DEFENSE,38.0
+Prontera Royal Seafood Soup,IGNORE_DEFENSE,2.25
+Prontera Royal Vegetable Soup,MAX_HP,500.0
+Prontera Royal Vegetable Soup,MAX_SP,50.0
+Prontera Royal Vegetable Soup,MAGIC_ATTACK,38.0
+Prontera Royal Vegetable Soup,MAGIC_DEFENSE,38.0
+Original Will-Broth,MAX_HP,600.0
+Original Will-Broth,MAX_SP,60.0
+Original Will-Broth,DEFENSE,40.0
+Original Will-Broth,MAGIC_DEFENSE,40.0
+Original Will-Broth,ATTACK_SPEED,3.5
+Original Will-Seafood Soup,MAX_HP,600.0
+Original Will-Seafood Soup,MAX_SP,60.0
+Original Will-Seafood Soup,ATTACK,40.0
+Original Will-Seafood Soup,MAGIC_DEFENSE,40.0
+Original Will-Seafood Soup,IGNORE_DEFENSE,2.5
+Original Will-Vegetable Soup,MAX_HP,600.0
+Original Will-Vegetable Soup,MAX_SP,60.0
+Original Will-Vegetable Soup,MAGIC_ATTACK,40.0
+Original Will-Vegetable Soup,MAGIC_DEFENSE,40.0
+Rookie Fruit Plate,MAX_HP,60.0
+Rookie Fruit Plate,MAX_SP,6.0
+Rookie Fruit Plate,MAGIC_ATTACK,8.0
+Rookie Salad,MAX_HP,60.0
+Rookie Salad,MAX_SP,6.0
+Rookie Salad,MAGIC_DEFENSE,8.0
+Rookie Sashimi,MAX_HP,60.0
+Rookie Sashimi,MAX_SP,6.0
+Rookie Sashimi,DEFENSE,8.0
+Rookie Sushi,MAX_HP,60.0
+Rookie Sushi,MAX_SP,6.0
+Rookie Sushi,ATTACK,8.0
+Ice Cream,MAX_HP,90.0
+Ice Cream,MAX_SP,9.0
+Ice Cream,MAGIC_ATTACK,12.0
+Ice Cream,DEFENSE,12.0
+Ray Dessert,MAX_HP,90.0
+Ray Dessert,MAX_SP,9.0
+Ray Dessert,MAGIC_DEFENSE,12.0
+Smokie Cookie,MAX_HP,90.0
+Smokie Cookie,MAX_SP,9.0
+Smokie Cookie,MAGIC_ATTACK,12.0
+Cheese Cake,MAX_HP,120.0
+Cheese Cake,MAX_SP,12.0
+Cheese Cake,MAGIC_ATTACK,16.0
+Cheese Cake,DMG_MONSTER_NOMVP,0.75
+Poring Parfait,MAX_HP,120.0
+Poring Parfait,MAX_SP,12.0
+Poring Parfait,ATTACK,16.0
+Poring Parfait,MAGIC_ATTACK,16.0
+Poring Parfait,DMG_MONSTER_MVP,0.75
+Seaside Black Tea,MAX_HP,120.0
+Seaside Black Tea,MAX_SP,12.0
+Seaside Black Tea,MAGIC_ATTACK,16.0
+Seaside Black Tea,DEFENSE,16.0
+Seaside Black Tea,PENETRATION,0.75
+Seaside Black Tea,MAGIC_PENETRATION,0.75
+Ancient Ice Honey,MAX_HP,180.0
+Ancient Ice Honey,MAX_SP,18.0
+Ancient Ice Honey,ATTACK,20.0
+Ancient Ice Honey,MAGIC_ATTACK,20.0
+Ancient Ice Honey,DMG_MONSTER_MVP,1.0
+Duke Juice,MAX_HP,180.0
+Duke Juice,MAX_SP,18.0
+Duke Juice,MAGIC_ATTACK,20.0
+Duke Juice,DEFENSE,20.0
+Duke Juice,PENETRATION,1.0
+Duke Juice,MAGIC_PENETRATION,1.0
+Vantican Bread,MAX_HP,180.0
+Vantican Bread,MAX_SP,18.0
+Vantican Bread,DEFENSE,20.0
+Vantican Bread,MAGIC_DEFENSE,20.0
+Vantican Bread,DMG_MONSTER_NOMVP,1.0
+Yummy Cake,MAX_HP,216.0
+Yummy Cake,MAX_SP,21.0
+Yummy Cake,MAGIC_ATTACK,24.0
+Yummy Cake,DEFENSE,24.0
+Yummy Cake,PENETRATION,1.25
+Yummy Cake,MAGIC_PENETRATION,1.25
+Yummy Cookie,MAX_HP,216.0
+Yummy Cookie,MAX_SP,21.0
+Yummy Cookie,ATTACK,24.0
+Yummy Cookie,MAGIC_ATTACK,24.0
+Yummy Cookie,DMG_MONSTER_MVP,1.25
+Yummy Tea,MAX_HP,216.0
+Yummy Tea,MAX_SP,21.0
+Yummy Tea,DEFENSE,24.0
+Yummy Tea,MAGIC_DEFENSE,24.0
+Yummy Tea,DMG_MONSTER_NOMVP,1.25
+Magic Bread,MAX_HP,300.0
+Magic Bread,MAX_SP,30.0
+Magic Bread,MAGIC_ATTACK,30.0
+Magic Bread,DEFENSE,30.0
+Magic Bread,PENETRATION,1.5
+Magic Bread,MAGIC_PENETRATION,1.5
+Magic Cookie,MAX_HP,300.0
+Magic Cookie,MAX_SP,30.0
+Magic Cookie,ATTACK,30.0
+Magic Cookie,MAGIC_ATTACK,30.0
+Magic Cookie,DMG_MONSTER_MVP,1.5
+Magic Ice Cream,MAX_HP,300.0
+Magic Ice Cream,MAX_SP,30.0
+Magic Ice Cream,DEFENSE,30.0
+Magic Ice Cream,MAGIC_DEFENSE,30.0
+Magic Ice Cream,DMG_MONSTER_NOMVP,1.5
+Bigfoot Forest Cookie,MAX_HP,360.0
+Bigfoot Forest Cookie,MAX_SP,36.0
+Bigfoot Forest Cookie,ATTACK,32.0
+Bigfoot Forest Cookie,MAGIC_ATTACK,32.0
+Bigfoot Forest Cookie,DMG_MONSTER_MVP,1.75
+Merchant City's Cake,MAX_HP,360.0
+Merchant City's Cake,MAX_SP,36.0
+Merchant City's Cake,DEFENSE,32.0
+Merchant City's Cake,MAGIC_DEFENSE,32.0
+Merchant City's Cake,DMG_MONSTER_NOMVP,1.75
+Noble Black Tea,MAX_HP,360.0
+Noble Black Tea,MAX_SP,36.0
+Noble Black Tea,MAGIC_ATTACK,32.0
+Noble Black Tea,DEFENSE,32.0
+Noble Black Tea,PENETRATION,1.75
+Noble Black Tea,MAGIC_PENETRATION,1.75
+Gatler's Palace,MAX_HP,420.0
+Gatler's Palace,MAX_SP,42.0
+Gatler's Palace,ATTACK,36.0
+Gatler's Palace,MAGIC_ATTACK,36.0
+Gatler's Palace,DMG_MONSTER_MVP,2.0
+Princess' Afternoon Tea,MAX_HP,420.0
+Princess' Afternoon Tea,MAX_SP,42.0
+Princess' Afternoon Tea,DEFENSE,36.0
+Princess' Afternoon Tea,MAGIC_DEFENSE,36.0
+Princess' Afternoon Tea,DMG_MONSTER_NOMVP,2.0
+Summer Star,MAX_HP,420.0
+Summer Star,MAX_SP,42.0
+Summer Star,MAGIC_ATTACK,36.0
+Summer Star,DEFENSE,36.0
+Summer Star,PENETRATION,2.0
+Summer Star,MAGIC_PENETRATION,2.0
+Prontera Royal Cookie,MAX_HP,500.0
+Prontera Royal Cookie,MAX_SP,50.0
+Prontera Royal Cookie,DEFENSE,38.0
+Prontera Royal Cookie,MAGIC_DEFENSE,38.0
+Prontera Royal Cookie,DMG_MONSTER_NOMVP,2.25
+Prontera Royal Ice Cream,MAX_HP,500.0
+Prontera Royal Ice Cream,MAX_SP,50.0
+Prontera Royal Ice Cream,ATTACK,38.0
+Prontera Royal Ice Cream,MAGIC_ATTACK,38.0
+Prontera Royal Ice Cream,DMG_MONSTER_MVP,2.25
+Prontera Royal Juice,MAX_HP,500.0
+Prontera Royal Juice,MAX_SP,50.0
+Prontera Royal Juice,MAGIC_ATTACK,38.0
+Prontera Royal Juice,DEFENSE,38.0
+Prontera Royal Juice,PENETRATION,2.25
+Prontera Royal Juice,MAGIC_PENETRATION,2.25
+Original Will-Cookies,MAX_HP,600.0
+Original Will-Cookies,MAX_SP,60.0
+Original Will-Cookies,DEFENSE,40.0
+Original Will-Cookies,MAGIC_DEFENSE,40.0
+Original Will-Cookies,DMG_MONSTER_NOMVP,2.5
+Original Will-Ice Cream,MAX_HP,600.0
+Original Will-Ice Cream,MAX_SP,60.0
+Original Will-Ice Cream,ATTACK,40.0
+Original Will-Ice Cream,MAGIC_ATTACK,40.0
+Original Will-Ice Cream,DMG_MONSTER_MVP,2.5
+Original Will-Juice,MAX_HP,600.0
+Original Will-Juice,MAX_SP,60.0
+Original Will-Juice,MAGIC_ATTACK,40.0
+Original Will-Juice,DEFENSE,40.0
+Original Will-Juice,PENETRATION,2.5
+Original Will-Juice,MAGIC_PENETRATION,2.5
