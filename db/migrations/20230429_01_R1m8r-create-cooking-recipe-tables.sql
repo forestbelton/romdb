@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS cooking_recipes(
     id INTEGER PRIMARY KEY,
     name TEXT UNIQUE NOT NULL,
     num_stars INTEGER NOT NULL,
+    method TEXT NOT NULL,
     cook_mastery_effect TEXT NOT NULL,
     cook_mastery_value REAL NOT NULL,
     taste_mastery_effect TEXT NOT NULL,

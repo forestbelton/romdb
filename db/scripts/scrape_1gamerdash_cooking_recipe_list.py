@@ -5,13 +5,13 @@ import bs4
 import requests
 
 FLOAT_RE = re.compile(r"^\d+(\.\d+)?%?$")
-ING_IMG_URL_RE = re.compile(
-    r"^https://1gamerdash.com/wp-content/themes/ogd/assets/images/cooking/(.*?)\.png\?x26807$"
+COOKING_IMG_URL_RE = re.compile(
+    r"^https://1gamerdash.com/wp-content/themes/ogd/assets/images/cooking/(.*?)\.(png|jpg)\?x26807$"
 )
 
 
 def get_ing_name(src: str) -> str:
-    m = ING_IMG_URL_RE.match(src)
+    m = COOKING_IMG_URL_RE.match(src)
     img_name = m.group(1)
     return " ".join([word.title() for word in img_name.split("-")])
 
@@ -64,6 +64,18 @@ def parse_effect(raw_effect: str) -> tuple[str, str]:
     except:
         raise ValueError(f"Couldn't parse effect '{raw_effect}': Unknown form")
 
+PARSED_METHOD_NAMES = {
+    "frying_station": "FRY",
+    "grilling_station": "GRILL",
+    "boiling_station": "BOIL",
+    "beverage_station": "BEVERAGE",
+}
+
+def parse_method(tag: bs4.Tag) -> str:
+    match = COOKING_IMG_URL_RE.match(tag["src"])
+    if match is None:
+        raise ValueError(f"Couldn't parse cooking method: '{tag['src']}'")
+    return PARSED_METHOD_NAMES[match.group(1)]
 
 def main() -> None:
     resp = requests.get("https://1gamerdash.com/ragnarok-mobile-cooking-recipe-list")
@@ -75,9 +87,11 @@ def main() -> None:
         effect_col = row.select_one(".effect")
         ingredients_col = effect_col.next_sibling
         mastery_col = row.select_one(".mastery")
+        method_col = mastery_col.next_sibling
         recipe = {
             "name": name_col.contents[0].replace("â\x80\x99", "'"),
             "num_stars": int(name_col["data-star"]),
+            "method": parse_method(method_col.contents[0]),
             "ingredients": get_ing_names(ingredients_col),
             "effects": [
                 str(node).strip() for node in effect_col.contents if node.name != "br"
@@ -95,6 +109,7 @@ def main() -> None:
             fieldnames=[
                 "recipe_name",
                 "num_stars",
+                "method",
                 "cook_mastery_effect",
                 "cook_mastery_value",
                 "taste_mastery_effect",
@@ -109,6 +124,7 @@ def main() -> None:
                 {
                     "recipe_name": recipe["name"],
                     "num_stars": recipe["num_stars"],
+                    "method": recipe["method"],
                     "cook_mastery_effect": cook_effect,
                     "cook_mastery_value": cook_value,
                     "taste_mastery_effect": taste_effect,
