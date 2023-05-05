@@ -1,5 +1,5 @@
 import initSqlJs, { Database } from "sql.js";
-import { CookingRecipe } from "./model";
+import { CookingMethod, CookingRecipe } from "./model";
 
 const SQLJS_WASM_BASEURL = "https://sql.js.org/dist";
 const ROMDB_SQLITE_PATH = "/romdb/romdb.sqlite3";
@@ -38,7 +38,7 @@ candidate_recipe_ids AS (
     WHERE recipe_id = ric.recipe_id AND has_ingredient = 0
   )
 )
-SELECT id, name, num_stars
+SELECT id, name, num_stars, method
 FROM cooking_recipes cr
 JOIN candidate_recipe_ids cri ON cr.id = cri.recipe_id
 ORDER BY num_stars DESC;
@@ -80,13 +80,15 @@ class RomDatabase {
     }
     // @ts-ignore
     return result[0].values.map((value) => {
-      const [recipeId, name, numStars] = value;
+      const [recipeId, name, numStars, method] = value;
       // @ts-ignore
       const ingredients = this.getCookingRecipeIngredients(recipeId);
       return {
         name,
         numStars,
         ingredients,
+        // @ts-ignore
+        method: CookingMethod[method],
       };
     });
   }

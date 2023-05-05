@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import SectionHeader from "./SectionHeader";
+import { Button, Flex, Group, Title } from "@mantine/core";
+
 import TournamentState from "./TournamentState";
 import IngredientPool from "./IngredientPool";
 import ItemSet from "./ItemSet";
 import RomDatabase from "../../RomDatabase";
-import RecipeItem from "./RecipeItem";
+import Recipe from "../../component/cooking/Recipe";
 
 type CookingTournamentProps = {
   ingredients: string[];
@@ -37,56 +38,42 @@ const CookingTournament = ({
   const bestRecipes = database.getMatchingCookingRecipes(availableIngredients);
   return (
     <div>
-      <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
-        Cooking Tournament
-      </div>
-      <div style={{ margin: "1rem 0", textAlign: "left" }}>
-        <button onClick={resetState}>Reset</button>
-      </div>
-      <div
-        style={{
-          display: "flex",
-        }}
-      >
+      <Group spacing="xl" mb="lg">
+        <Title order={2}>Cooking Tournament</Title>
+        <Button size="xs" onClick={resetState}>
+          Reset
+        </Button>
+      </Group>
+      <Flex>
         <ItemSet
           headerTitle="Player Items"
-          ingredients={ingredients}
           items={state.playerIngredients}
           onItemUpdate={onPlayerItemUpdate}
         />
-        <div
-          style={{
-            boxSizing: "border-box",
-            padding: "0 1rem",
-            border: "2px solid rgba(255,255,255,0.87)",
-            borderBottom: "0",
-            borderTop: "0",
-          }}
-        >
-          <SectionHeader>Ingredient Pool</SectionHeader>
+        <div>
+          <Title order={3} mb="lg" align="center">
+            Ingredient Pool
+          </Title>
           <IngredientPool
             ingredients={ingredients}
             items={state.ingredientPool}
             onPoolUpdate={onPoolUpdate}
           />
-          <SectionHeader style={{ marginBottom: "2rem", marginTop: "2rem" }}>
+          <Title order={3} mb="lg" mt="lg">
             Best Recipes
-          </SectionHeader>
-          <div style={{ textAlign: "left" }}>
+          </Title>
+          <Flex direction="column" gap="lg">
             {bestRecipes.map((recipe, i) => (
-              <div key={i} style={{ marginBottom: "2rem" }}>
-                <RecipeItem recipe={recipe} />
-              </div>
+              <Recipe key={i} recipe={recipe} />
             ))}
-          </div>
+          </Flex>
         </div>
         <ItemSet
           headerTitle="Muctung Items"
-          ingredients={ingredients}
           items={state.mateIngredients}
           onItemUpdate={onMateItemUpdate}
         />
-      </div>
+      </Flex>
     </div>
   );
 };

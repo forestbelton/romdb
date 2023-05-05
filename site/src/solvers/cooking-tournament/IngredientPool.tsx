@@ -1,4 +1,6 @@
-import IngredientItem from "./IngredientItem";
+import { SimpleGrid } from "@mantine/core";
+
+import IngredientPicker from "./IngredientPicker";
 
 type IngredientPoolProps = {
   ingredients: string[];
@@ -15,36 +17,17 @@ const IngredientPool = ({
   items,
   onPoolUpdate,
 }: IngredientPoolProps) => (
-  <div
-    style={{
-      boxSizing: "border-box",
-      display: "grid",
-      gridGap: "2rem 1rem",
-      gridTemplateColumns: "repeat(4, 1fr)",
-    }}
-  >
+  <SimpleGrid cols={4} spacing="xs" verticalSpacing="xs" ml="xl" mr="xl">
     {items.map(({ ingredient, taken }, i) => (
-      <div
-        key={i}
-        style={{
-          display: "inline-flex",
-        }}
-      >
-        <input
-          type="checkbox"
-          checked={taken}
-          onChange={(ev) => {
-            onPoolUpdate(i, ingredient, ev.target.checked);
-          }}
-        />
-        <IngredientItem
+      <div key={i}>
+        <IngredientPicker
           ingredients={ingredients}
           name={ingredient}
-          onItemUpdate={(name) => onPoolUpdate(i, name, taken)}
+          onChange={(name) => onPoolUpdate(i, name, taken)}
         />
       </div>
     ))}
-  </div>
+  </SimpleGrid>
 );
 
 export default IngredientPool;

@@ -1,19 +1,13 @@
-import IngredientItem from "./IngredientItem";
-import SectionHeader from "./SectionHeader";
+import { SimpleGrid, Title } from "@mantine/core";
+import IngredientIcon from "../../component/cooking/IngredientIcon";
 
 type ItemSetProps = {
   headerTitle: string;
-  ingredients: string[];
   items: IngredientName[];
   onItemUpdate: (index: number, name: IngredientName) => void;
 };
 
-const ItemSet = ({
-  headerTitle,
-  ingredients,
-  items,
-  onItemUpdate,
-}: ItemSetProps) => (
+const ItemSet = ({ headerTitle, items, onItemUpdate }: ItemSetProps) => (
   <div
     style={{
       display: "inline-flex",
@@ -21,33 +15,21 @@ const ItemSet = ({
       padding: "0 1rem",
     }}
   >
-    <SectionHeader>{headerTitle}</SectionHeader>
-    <div
-      style={{
-        display: "grid",
-        gridGap: "2rem 1rem",
-        gridTemplateColumns: "repeat(4, 1fr)",
-        justifyContent: "space-evently",
-      }}
-    >
-      {items.map((item, i) => (
-        <div
+    <Title order={3} mb="lg" align="center">
+      {headerTitle}
+    </Title>
+    <SimpleGrid cols={2} spacing="xs" verticalSpacing="xs">
+      {items.map((name, i) => (
+        <IngredientIcon
           key={i}
+          name={name}
           style={{
-            gridColumn:
-              i === items.length - 1 && items.length % 2 == 1
-                ? "2 / span 2"
-                : "span 2",
+            marginRight:
+              i === items.length - 1 && items.length % 2 === 1 ? -88 : "auto",
           }}
-        >
-          <IngredientItem
-            ingredients={ingredients}
-            name={item}
-            onItemUpdate={(name) => onItemUpdate(i, name)}
-          />
-        </div>
+        />
       ))}
-    </div>
+    </SimpleGrid>
   </div>
 );
 
