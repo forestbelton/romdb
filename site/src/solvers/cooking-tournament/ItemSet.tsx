@@ -7,7 +7,7 @@ type ItemSetProps = {
   onItemUpdate: (index: number, name: IngredientName) => void;
 };
 
-const ItemSet = ({ headerTitle, items, onItemUpdate }: ItemSetProps) => (
+const ItemSet = ({ headerTitle, items }: ItemSetProps) => (
   <div
     style={{
       display: "inline-flex",

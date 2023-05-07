@@ -1,4 +1,4 @@
-import { Badge, Card, Group, List, Text } from "@mantine/core";
+import { Badge, Card, Group, Text } from "@mantine/core";
 import { CookingMethod, CookingRecipe } from "../../model";
 import IngredientIcon from "./IngredientIcon";
 
