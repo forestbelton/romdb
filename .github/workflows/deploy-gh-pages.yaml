@@ -39,7 +39,7 @@ jobs:
         with:
           python-version: "3.10"
       - name: Build SQLite database
-        run: ../db/scripts/create.sh
+        run: ../romdb/scripts/create.sh
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
