@@ -42,13 +42,3 @@ def execute_for_csv(
     for row in read_csv(filename):
         results.extend(execute_many(query, row))
     return results
-
-
-@dataclasses.dataclass
-class UpsertFile:
-    csv_path: str
-    upsert_sql: str
-    many: bool = False
-
-    def execute(self) -> list[sqlite3.Row]:
-        return execute_for_csv(self.csv_path, self.upsert_sql, self.many)
